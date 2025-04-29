@@ -1,0 +1,9 @@
+services:
+  twitch-unban-request-logger:
+    image: "ghcr.io/wissididom/twitch-sus-user-logger"
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    environment:
+      NODE_ENV: production
+    env_file: .env

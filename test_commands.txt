@@ -1,0 +1,3 @@
+twitch event verify-subscription cheer -F http://localhost:1337 -s TestSecret
+twitch event trigger channel.suspicious_user.message -F http://localhost:1337 -t 636874779 -s TestSecret
+./cloudflared --url http://localhost:1337
